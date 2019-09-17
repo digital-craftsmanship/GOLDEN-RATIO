@@ -8,7 +8,6 @@ import processing.pdf.*;
 void setup() {
   noLoop();
   beginRecord(PDF, "SPIRAL" + ".pdf");
-  smooth();
   size(400,400);
   stroke(255,0,0);
   strokeWeight(5);
@@ -18,7 +17,7 @@ void setup() {
 void spiral(float xc, float yc, float rot){
      //xc,yc are the coordinates of centre
      //rot is the initial orientation
-     //a is the radius after one winding
+     //a defines radius growth
      int steps = 100;
      int windings = 2;
      float a = 10;

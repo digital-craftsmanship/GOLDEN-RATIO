@@ -1,19 +1,16 @@
 //(c) Loe Feijs and TU/e 2016-2019
 //for Golden Ratio and Digital Craftmanship 
 //The Circle is approximated by red dots
-
 import processing.pdf.*;
 
 void setup() {
   noLoop();
   beginRecord(PDF, "CIRCLE" + ".pdf");
-  smooth();
   size(400,400);
   stroke(255,0,0);
   strokeWeight(4);
   background(255);
 }
-
 void circle(float xc, float yc){
      //xc,yc are the coordinates of centre
      //a is the radius
